@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwxqlk0q24xwb"]
+
+[ext_resource type="Script" path="res://scenes/door.gd" id="1_nwdtq"]
+[ext_resource type="Texture2D" uid="uid://cjhh5ophm04kf" path="res://assets/items/testing/test_door.png" id="1_otny0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qkgvs"]
+size = Vector2(20, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ll33u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_otny0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="door" type="Area2D"]
+script = ExtResource("1_nwdtq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_qkgvs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ll33u")
