@@ -11,15 +11,39 @@ var player
 
 var animator
 
-func _physics_process(delta):
-	
-	handle_movement()
-
-func handle_movement():
-	move_and_slide()
+var moving: bool = false
+var path: Array
+var destination_node: NPCPathfinderNode
 
 func _ready():
 	animator = $AnimatedSprite2D
+
+func _physics_process(delta):
+	
+	if (Input.is_action_just_pressed("drop_item")):
+		move(Vector2(-30, 60), Vector2(50, 30))
+	handle_movement()
+
+func handle_movement():
+	if (!moving):
+		return
+	if (!destination_node):
+		return
+	
+	var destination = destination_node.position
+	
+	var direction = position.direction_to(destination)
+	
+	velocity = direction * WALK_SPEED
+	
+	if ((position - destination).length() < 5):
+		if (!path.is_empty()):
+			destination_node = path.pop_front()
+		else:
+			moving = false
+			destination_node = null
+	
+	move_and_slide()
 
 func interact():
 	if (!player):
@@ -38,3 +62,16 @@ func _on_body_exited(body):
 		player.remove_interactible(self)
 		player = null
 		animator.animation = "player_out"
+
+func move(from_position, to_position):
+	path = NPCPathfinder.find_path(from_position, to_position)
+	
+	print(path)
+	destination_node = path.pop_front()
+	moving = true
+	
+	
+
+
+
+

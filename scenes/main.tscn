@@ -55,5 +55,105 @@ position = Vector2(-58, 13)
 [node name="NPC_Movement_Graph" type="Node2D" parent="."]
 script = ExtResource("5_gc2jf")
 
-[node name="node" type="Node2D" parent="NPC_Movement_Graph"]
+[node name="node" type="Node2D" parent="NPC_Movement_Graph" node_paths=PackedStringArray("node1")]
+position = Vector2(-30, 60)
 script = ExtResource("7_j2em7")
+node1 = NodePath("../node2")
+
+[node name="ColorRect" type="ColorRect" parent="NPC_Movement_Graph/node"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.968627, 0, 0.211765, 1)
+
+[node name="node2" type="Node2D" parent="NPC_Movement_Graph" node_paths=PackedStringArray("node1", "node2")]
+position = Vector2(10, 60)
+script = ExtResource("7_j2em7")
+node1 = NodePath("../node")
+node2 = NodePath("../node4")
+
+[node name="ColorRect" type="ColorRect" parent="NPC_Movement_Graph/node2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.968627, 0, 0.211765, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="node3" type="Node2D" parent="NPC_Movement_Graph" node_paths=PackedStringArray("node1")]
+position = Vector2(50, 30)
+script = ExtResource("7_j2em7")
+node1 = NodePath("../node4")
+
+[node name="ColorRect" type="ColorRect" parent="NPC_Movement_Graph/node3"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.968627, 0, 0.211765, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="node4" type="Node2D" parent="NPC_Movement_Graph" node_paths=PackedStringArray("node1", "node2", "node3")]
+position = Vector2(50, 60)
+script = ExtResource("7_j2em7")
+node1 = NodePath("../node2")
+node2 = NodePath("../node3")
+node3 = NodePath("../node5")
+
+[node name="ColorRect" type="ColorRect" parent="NPC_Movement_Graph/node4"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.968627, 0, 0.211765, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="node5" type="Node2D" parent="NPC_Movement_Graph" node_paths=PackedStringArray("node1")]
+position = Vector2(90, 60)
+script = ExtResource("7_j2em7")
+node1 = NodePath("../node4")
+node2 = NodePath("")
+
+[node name="ColorRect" type="ColorRect" parent="NPC_Movement_Graph/node5"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.968627, 0, 0.211765, 1)
+metadata/_edit_use_anchors_ = true
