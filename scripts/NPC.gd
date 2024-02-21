@@ -6,6 +6,7 @@ const RUN_SPEED = 150
 
 @export var npc_name: String
 @export var conversations: PackedStringArray
+@export var desired_item: Item
 
 var player
 
@@ -20,8 +21,8 @@ func _ready():
 
 func _physics_process(delta):
 	
-	if (Input.is_action_just_pressed("drop_item")):
-		move(Vector2(-30, 60), Vector2(50, 30))
+#	if (Input.is_action_just_pressed("drop_item")):
+#		move(Vector2(-30, 60), Vector2(50, 30))
 	handle_movement()
 
 func handle_movement():
@@ -48,7 +49,15 @@ func handle_movement():
 func interact():
 	if (!player):
 		return
-	var conv = conversations[randi_range(0, 1)]
+	
+	var conv
+	if (player.holding):
+		if (player.holding == desired_item):
+			conv = conversations[0]
+		else:
+			conv = conversations[1]
+	else:
+		conv = conversations[randi_range(2, 3)]
 	player.start_dialogue(npc_name, conv)
 
 func _on_body_entered(body):

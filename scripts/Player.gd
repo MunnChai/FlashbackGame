@@ -38,6 +38,9 @@ func _physics_process(delta):
 	if (holding):
 		holding.position = global_position + Vector2(0, -13)
 
+
+
+
 func handle_input():
 	
 	if (talking && Input.is_action_just_pressed("interact")):
@@ -51,8 +54,13 @@ func handle_input():
 		drop_item()
 	
 	if (interactibles.size() > 0 && Input.is_action_just_pressed("interact")):
-		print(interactibles)
-		interactibles[0].interact()
+		if (holding):
+			for i in interactibles:
+				if !(i is Item):
+					i.interact()
+					return
+		else:
+			interactibles[0].interact()
 
 func handle_movement():
 	var x_direction = Input.get_axis("left", "right")
@@ -75,9 +83,13 @@ func handle_movement():
 	
 	move_and_slide()
 
+
+
+
 func add_interactible(interactible):
 	if (interactibles.size() == 0):
 		interactibles.push_front(interactible)
+		update_top_interactible()
 		return
 	
 	for i in interactibles.size():
@@ -86,12 +98,29 @@ func add_interactible(interactible):
 		
 		if (to_be_added_y_pos > interactible_y_pos):
 			interactibles.insert(i, interactible)
+			update_top_interactible()
 			return
 	
 	interactibles.push_back(interactible)
+	update_top_interactible()
 
 func remove_interactible(interactible):
+	interactible.animator.animation = "player_out"
 	interactibles.remove_at(interactibles.find(interactible))
+	update_top_interactible()
+
+func update_top_interactible():
+	var can_interact = true
+	for i in interactibles.size():
+		var interactible = interactibles[i]
+		if (holding && interactible is Item):
+			interactible.animator.animation = "player_out"
+		elif (can_interact):
+			interactible.animator.animation = "player_in"
+			can_interact = false
+		else:
+			interactible.animator.animation = "player_out"
+
 
 func pick_up_item(item):
 	if (talking || holding):
@@ -102,6 +131,9 @@ func pick_up_item(item):
 func drop_item():
 	holding.position = global_position + Vector2(0, 8)
 	holding = null
+
+
+
 
 func start_dialogue(npc_name, conversation_name):
 	if (talking):
@@ -133,6 +165,9 @@ func next_voiceline():
 		end_dialogue()
 	else:
 		show_voiceline(conversation_position)
+
+
+
 
 func grayscale_on():
 	grayscale_layer.visible = true

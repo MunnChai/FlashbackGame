@@ -23,13 +23,11 @@ func _on_body_entered(body):
 	if (body is Player):
 		player = body
 		player.add_interactible(self)
-		print("entered door")
 		
 func _on_body_exited(body):
 	if (body is Player):
 		player.remove_interactible(self)
 		player = null
-		print("exited door")
 
 # requires player!
 func teleport():

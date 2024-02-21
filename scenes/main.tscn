@@ -142,10 +142,11 @@ layer_0/tile_data = PackedInt32Array(2, 65537, 0, 1, 65537, 0, 0, 65537, 0, 6553
 [node name="item" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(22, 9)
 
-[node name="npc" parent="." instance=ExtResource("4_3t3ge")]
+[node name="npc" parent="." node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
 position = Vector2(-20, 25)
 npc_name = "test_dialogue"
-conversations = PackedStringArray("conv1", "conv2")
+conversations = PackedStringArray("item_desired", "item_general", "conv2", "conv1")
+desired_item = NodePath("../item")
 
 [node name="item2" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(41, 34)

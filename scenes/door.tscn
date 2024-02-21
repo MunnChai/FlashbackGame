@@ -7,7 +7,6 @@
 size = Vector2(20, 22)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m2b4k"]
-load_path = "res://.godot/imported/test_door2.png-6d3e9b077a01a5082c9203b3ad9b69fa.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ll33u"]
 animations = [{
@@ -27,7 +26,7 @@ animations = [{
 script = ExtResource("1_nwdtq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_qkgvs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -14,5 +14,33 @@
 			"Name": "Me",
 			"Text": "You a bitch!!!"
 		}
+	],
+	"item_desired": [
+		{
+			"Name": "NPC",
+			"Text": "Thank you for the apple!"
+		},
+		{
+			"Name": "Me",
+			"Text": "Shut up bitch!!!"
+		},
+		{
+			"Name": "NPC",
+			"Text": "WAAAAHHHHHHHHH"
+		}
+	],
+	"item_general": [
+		{
+			"Name": "NPC",
+			"Text": "What's that you're holding?"
+		},
+		{
+			"Name": "Me",
+			"Text": "None of your business bitch!!!"
+		},
+		{
+			"Name": "NPC",
+			"Text": "WAAAAHHHHHHHHH"
+		}
 	]
 }
