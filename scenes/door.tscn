@@ -1,16 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwxqlk0q24xwb"]
+[gd_scene load_steps=6 format=3 uid="uid://bwxqlk0q24xwb"]
 
-[ext_resource type="Script" path="res://scenes/door.gd" id="1_nwdtq"]
-[ext_resource type="Texture2D" uid="uid://cjhh5ophm04kf" path="res://assets/items/testing/test_door.png" id="1_otny0"]
+[ext_resource type="Script" path="res://scripts/Door.gd" id="1_nwdtq"]
+[ext_resource type="Texture2D" uid="uid://cjhh5ophm04kf" path="res://assets/items/testing/test_door1.png" id="1_otny0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkgvs"]
-size = Vector2(20, 11)
+size = Vector2(20, 22)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m2b4k"]
+load_path = "res://.godot/imported/test_door2.png-6d3e9b077a01a5082c9203b3ad9b69fa.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ll33u"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_otny0")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_m2b4k")
 }],
 "loop": true,
 "name": &"default",
@@ -21,8 +27,11 @@ animations = [{
 script = ExtResource("1_nwdtq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 7.5)
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_qkgvs")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ll33u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
