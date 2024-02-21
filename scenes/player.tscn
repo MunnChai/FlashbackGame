@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bt3vqc1grhu6d"]
+[gd_scene load_steps=7 format=3 uid="uid://bt3vqc1grhu6d"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_2r46r"]
 [ext_resource type="Texture2D" uid="uid://dqh8ytg24avjj" path="res://assets/characters/testing/testing_default.png" id="1_dnr5g"]
+[ext_resource type="Shader" path="res://shaders/grayscale.gdshader" id="3_ddq7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfiv5"]
 size = Vector2(10, 2)
@@ -16,6 +17,9 @@ animations = [{
 "name": &"default",
 "speed": 5.0
 }]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_syckr"]
+shader = ExtResource("3_ddq7u")
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 2
@@ -33,6 +37,24 @@ sprite_frames = SubResource("SpriteFrames_ikfxx")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+
+[node name="GrayscaleShader" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -206.15
+offset_top = 50.68
+offset_right = -166.15
+offset_bottom = 90.68
+
+[node name="ColorRect" type="ColorRect" parent="GrayscaleShader"]
+z_index = 1
+material = SubResource("ShaderMaterial_syckr")
+layout_mode = 0
+offset_left = -15.85
+offset_top = -186.68
+offset_right = 445.15
+offset_bottom = 84.32
 
 [node name="DialogueBox" type="Control" parent="."]
 process_mode = 3

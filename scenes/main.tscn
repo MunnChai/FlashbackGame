@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cw8e5axbi5251"]
+[gd_scene load_steps=9 format=3 uid="uid://cw8e5axbi5251"]
 
 [ext_resource type="Texture2D" uid="uid://coy5porvinq8p" path="res://assets/tiles/testing/test_tilemap-Sheet.png" id="1_5lwlv"]
 [ext_resource type="PackedScene" uid="uid://bt3vqc1grhu6d" path="res://scenes/player.tscn" id="2_hjcp8"]
 [ext_resource type="PackedScene" uid="uid://cau45hk3r7yqt" path="res://scenes/item.tscn" id="3_qg7mt"]
 [ext_resource type="PackedScene" uid="uid://cbx4vofdues8d" path="res://scenes/npc.tscn" id="4_3t3ge"]
+[ext_resource type="Script" path="res://scripts/NPCPathfinder.gd" id="5_gc2jf"]
+[ext_resource type="Script" path="res://scenes/NPCPathfinderNode.gd" id="6_xxcnu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gqek8"]
 texture = ExtResource("1_5lwlv")
@@ -45,3 +47,9 @@ conversations = PackedStringArray("conv1", "conv2")
 
 [node name="item2" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(41, 34)
+
+[node name="NPC_Movement_Graph" type="Node2D" parent="."]
+script = ExtResource("5_gc2jf")
+
+[node name="node" type="Node2D" parent="NPC_Movement_Graph"]
+script = ExtResource("6_xxcnu")

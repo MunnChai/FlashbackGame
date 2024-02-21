@@ -5,8 +5,9 @@ const WALK_SPEED = 75
 const RUN_SPEED = 150
 
 var holding: Item
-
 var interactibles: Array
+
+var grayscale_layer
 
 # For all things dialogue related
 var dialogue_box
@@ -18,6 +19,8 @@ var current_conversation: Array
 var conversation_position: int
 
 func _ready():
+	grayscale_layer = $GrayscaleShader
+	
 	dialogue_box = $DialogueBox
 	dialogue_name = $DialogueBox/MarginContainer/VBoxContainer/Name
 	dialogue_text = $DialogueBox/MarginContainer/VBoxContainer/Dialogue
@@ -33,7 +36,7 @@ func _physics_process(delta):
 	handle_movement()
 	
 	if (holding):
-		holding.position = global_position + Vector2(0, -12)
+		holding.position = global_position + Vector2(0, -13)
 
 func handle_input():
 	
@@ -131,6 +134,10 @@ func next_voiceline():
 	else:
 		show_voiceline(conversation_position)
 
+func grayscale_on():
+	grayscale_layer.visible = true
 
+func grayscale_off():
+	grayscale_layer.visible = false
 
 
