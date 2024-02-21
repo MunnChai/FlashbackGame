@@ -2,7 +2,6 @@ class_name Item
 extends Area2D
 
 var player
-
 var animator
 
 func _ready():
