@@ -1,18 +1,30 @@
 {
-	"conv1": [
+	"looking_for_item": [
 		{
-			"Name": "Bob",
-			"Text": "Hello!"
+			"Name": "NPC",
+			"Text": "Hello, you're new to town, right?"
 		},
 		{
 			"Name": "Me",
-			"Text": "Fuck you!!!"
+			"Text": "Yeah, fuck you!"
+		},
+		{
+			"Name": "NPC",
+			"Text": "I'm looking for an apple, can you help me?"
 		}
 	],
-	"conv2": [
+	"got_item": [
+		{
+			"Name": "NPC",
+			"Text": "Thank you again for helping me get that apple!"
+		},
 		{
 			"Name": "Me",
-			"Text": "You a bitch!!!"
+			"Text": "SHUT UP BITCH!!!!"
+		},
+		{
+			"Name": "NPC",
+			"Text": "..."
 		}
 	],
 	"item_desired": [

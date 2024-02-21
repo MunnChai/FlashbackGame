@@ -145,7 +145,7 @@ position = Vector2(22, 9)
 [node name="npc" parent="." node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
 position = Vector2(-20, 25)
 npc_name = "test_dialogue"
-conversations = PackedStringArray("item_desired", "item_general", "conv2", "conv1")
+conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../item")
 
 [node name="item2" parent="." instance=ExtResource("3_qg7mt")]

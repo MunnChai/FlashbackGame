@@ -3,10 +3,12 @@ extends CharacterBody2D
 
 const WALK_SPEED = 75
 const RUN_SPEED = 150
+var move_speed: float
 
 @export var npc_name: String
 @export var conversations: PackedStringArray
 @export var desired_item: Item
+var current_conversation
 
 var player
 
@@ -18,6 +20,7 @@ var destination_node: NPCPathfinderNode
 
 func _ready():
 	animator = $AnimatedSprite2D
+	current_conversation = 0
 
 func _physics_process(delta):
 	
@@ -35,7 +38,7 @@ func handle_movement():
 	
 	var direction = position.direction_to(destination)
 	
-	velocity = direction * WALK_SPEED
+	velocity = direction * move_speed
 	
 	if ((position - destination).length() < 5):
 		if (!path.is_empty()):
@@ -53,12 +56,19 @@ func interact():
 	var conv
 	if (player.holding):
 		if (player.holding == desired_item):
-			conv = conversations[0]
+			conv = "item_desired"
+			current_conversation += 1
+			var item = player.holding
+			player.drop_item()
+			item.queue_free()
 		else:
-			conv = conversations[1]
+			conv = "item_general"
 	else:
-		conv = conversations[randi_range(2, 3)]
+		conv = conversations[current_conversation]
 	player.start_dialogue(npc_name, conv)
+
+func set_conversation(i):
+	current_conversation = i
 
 func _on_body_entered(body):
 	if (body is Player):
@@ -72,14 +82,16 @@ func _on_body_exited(body):
 		player = null
 		animator.animation = "player_out"
 
-func move(from_position, to_position):
+func move(from_position, to_position, running):
 	path = NPCPathfinder.find_path(from_position, to_position)
 	
 	print(path)
 	destination_node = path.pop_front()
+	if (running):
+		move_speed = RUN_SPEED
+	else:
+		move_speed = WALK_SPEED
 	moving = true
-	
-	
 
 
 
