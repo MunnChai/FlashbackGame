@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bt3vqc1grhu6d"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_2r46r"]
-[ext_resource type="Texture2D" uid="uid://dqh8ytg24avjj" path="res://assets/character/testing/testing_default.png" id="1_dnr5g"]
+[ext_resource type="Texture2D" uid="uid://dqh8ytg24avjj" path="res://assets/characters/testing/testing_default.png" id="1_dnr5g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfiv5"]
 size = Vector2(10, 2)
@@ -28,6 +28,7 @@ position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_vfiv5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+y_sort_enabled = true
 sprite_frames = SubResource("SpriteFrames_ikfxx")
 
 [node name="Camera2D" type="Camera2D" parent="."]

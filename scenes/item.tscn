@@ -31,7 +31,7 @@ collision_layer = 4
 script = ExtResource("1_gtetk")
 
 [node name="CollisionArea" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(0, 4)
 shape = SubResource("CircleShape2D_aieah")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

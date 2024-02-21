@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cw8e5axbi5251"]
+[gd_scene load_steps=7 format=3 uid="uid://cw8e5axbi5251"]
 
 [ext_resource type="Texture2D" uid="uid://coy5porvinq8p" path="res://assets/tiles/testing/test_tilemap-Sheet.png" id="1_5lwlv"]
 [ext_resource type="PackedScene" uid="uid://bt3vqc1grhu6d" path="res://scenes/player.tscn" id="2_hjcp8"]
 [ext_resource type="PackedScene" uid="uid://cau45hk3r7yqt" path="res://scenes/item.tscn" id="3_qg7mt"]
+[ext_resource type="PackedScene" uid="uid://cbx4vofdues8d" path="res://scenes/npc.tscn" id="4_3t3ge"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gqek8"]
 texture = ExtResource("1_5lwlv")
@@ -24,15 +25,58 @@ physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_gqek8")
 
 [node name="main" type="Node2D"]
+y_sort_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
+z_index = -1
 tile_set = SubResource("TileSet_fqx55")
 format = 2
 layer_0/tile_data = PackedInt32Array(2, 0, 0, 1, 0, 0, 0, 0, 0, 65535, 0, 0, 65534, 0, 0, 65537, 0, 0, 65536, 0, 0, 131071, 0, 0, 131070, 0, 0, 131069, 0, 0, 65538, 0, 0, 65539, 0, 0, 3, 0, 0, 65533, 0, 0, -3, 65536, 0, -2, 65536, 0, -1, 65536, 0, -65536, 65536, 0, -65535, 65536, 0, -65534, 65536, 0, -65533, 65536, 0, -131069, 131072, 0, -131070, 131072, 0, -131071, 131072, 0, -131072, 131072, 0, -65537, 131072, 0, -65538, 131072, 0, -65539, 131072, 0, -131075, 131072, 0, -131074, 131072, 0, -131073, 131072, 0, -196608, 131072, 0, -196607, 131072, 0, -196606, 131072, 0, -196605, 131072, 0, -262141, 131072, 0, -262142, 131072, 0, -262143, 131072, 0, -262144, 131072, 0, -196609, 131072, 0, -196610, 131072, 0, -196611, 131072, 0, 196611, 0, 0, 131075, 0, 0, 131074, 0, 0, 131073, 0, 0, 131072, 0, 0, 196607, 0, 0, 196606, 0, 0, 196605, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196612, 0, 0, 196613, 0, 0, 262149, 0, 0, 262148, 0, 0, 262147, 0, 0, 262146, 0, 0, 262145, 0, 0, 262144, 0, 0, 327679, 0, 0, 327678, 0, 0, 327677, 0, 0, 327676, 0, 0, 262140, 0, 0, 196604, 0, 0, 196614, 0, 0, 131078, 0, 0, 131077, 0, 0, 65540, 0, 0, 131076, 0, 0, 196603, 0, 0, 196602, 0, 0, 262138, 0, 0, 262139, 0, 0, 327675, 0, 0, 131067, 0, 0, 131066, 0, 0, 65531, 0, 0, 65532, 0, 0, 4, 0, 0, 5, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 131079, 0, 0, 131068, 0, 0, -65530, 65536, 0, -65531, 65536, 0, -65532, 65536, 0, -4, 65536, 0, -5, 65536, 0, -6, 65536, 0, -65542, 131072, 0, -65541, 131072, 0, -65540, 131072, 0, -131068, 131072, 0, -131067, 131072, 0, -131066, 131072, 0, -131065, 131072, 0, -196604, 131072, 0, -196612, 131072, 0, -131076, 131072, 0, -131077, 131072, 0)
 
 [node name="player" parent="." instance=ExtResource("2_hjcp8")]
 
+[node name="MarginContainer" type="MarginContainer" parent="player"]
+offset_left = -212.51
+offset_top = 53.65
+offset_right = 232.49
+offset_bottom = 166.65
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="player/MarginContainer"]
+custom_minimum_size = Vector2(425, 0)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="player/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 10
+theme_override_font_sizes/bold_font_size = 10
+theme_override_font_sizes/italics_font_size = 10
+theme_override_font_sizes/bold_italics_font_size = 10
+theme_override_font_sizes/mono_font_size = 10
+text = "Hello"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="player/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 7
+theme_override_font_sizes/bold_font_size = 7
+theme_override_font_sizes/italics_font_size = 7
+theme_override_font_sizes/bold_italics_font_size = 7
+theme_override_font_sizes/mono_font_size = 7
+text = "Hello"
+
+[node name="ColorRect" type="ColorRect" parent="player/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+
 [node name="item" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(22, 9)
+
+[node name="npc" parent="." instance=ExtResource("4_3t3ge")]
+position = Vector2(46, 42)
 
 [connection signal="signal_interact" from="item" to="player" method="pick_up_item"]
