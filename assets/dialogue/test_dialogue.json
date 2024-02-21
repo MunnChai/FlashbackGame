@@ -1,0 +1,18 @@
+{
+	"conv1": [
+		{
+			"Name": "Bob",
+			"Text": "Hello!"
+		},
+		{
+			"Name": "Me",
+			"Text": "Fuck you!!!"
+		}
+	],
+	"conv2": [
+		{
+			"Name": "Me",
+			"Text": "You a bitch!!!"
+		}
+	]
+}
