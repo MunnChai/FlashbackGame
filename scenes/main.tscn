@@ -35,48 +35,13 @@ layer_0/tile_data = PackedInt32Array(2, 0, 0, 1, 0, 0, 0, 0, 0, 65535, 0, 0, 655
 
 [node name="player" parent="." instance=ExtResource("2_hjcp8")]
 
-[node name="MarginContainer" type="MarginContainer" parent="player"]
-offset_left = -212.51
-offset_top = 53.65
-offset_right = 232.49
-offset_bottom = 166.65
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
-
-[node name="VBoxContainer" type="VBoxContainer" parent="player/MarginContainer"]
-custom_minimum_size = Vector2(425, 0)
-layout_mode = 2
-
-[node name="RichTextLabel" type="RichTextLabel" parent="player/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 15)
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 10
-theme_override_font_sizes/bold_font_size = 10
-theme_override_font_sizes/italics_font_size = 10
-theme_override_font_sizes/bold_italics_font_size = 10
-theme_override_font_sizes/mono_font_size = 10
-text = "Hello"
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="player/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 7
-theme_override_font_sizes/bold_font_size = 7
-theme_override_font_sizes/italics_font_size = 7
-theme_override_font_sizes/bold_italics_font_size = 7
-theme_override_font_sizes/mono_font_size = 7
-text = "Hello"
-
-[node name="ColorRect" type="ColorRect" parent="player/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-
 [node name="item" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(22, 9)
 
 [node name="npc" parent="." instance=ExtResource("4_3t3ge")]
-position = Vector2(46, 42)
+position = Vector2(-20, 25)
+npc_name = "test_dialogue"
+conversations = PackedStringArray("conv1", "conv2")
 
-[connection signal="signal_interact" from="item" to="player" method="pick_up_item"]
+[node name="item2" parent="." instance=ExtResource("3_qg7mt")]
+position = Vector2(41, 34)

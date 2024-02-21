@@ -1,7 +1,7 @@
 class_name Item
-extends Interactible
+extends Area2D
 
-var player_in = false
+var player
 
 var animator
 
@@ -9,16 +9,19 @@ func _ready():
 	animator = $AnimatedSprite2D
 
 func interact():
-	if (!player_in):
+	if (!player):
+		print("Error: interacted with object outside of player collision")
 		return
-	signal_interact.emit(self)
+	player.pick_up_item(self)
 
 func _on_body_entered(body):
 	if (body is Player):
-		player_in = true
+		player = body
+		player.add_interactible(self)
 		animator.animation = "player_in"
 
 func _on_body_exited(body):
 	if (body is Player):
-		player_in = false
+		player.remove_interactible(self)
+		player = null
 		animator.animation = "player_out"
