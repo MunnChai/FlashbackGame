@@ -18,7 +18,7 @@ y_sort_enabled = true
 guide = NodePath("../Kai")
 
 [node name="Kai" parent="." node_paths=PackedStringArray("player_node") instance=ExtResource("3_xl84m")]
-position = Vector2(-112, 13)
+position = Vector2(-69, 24)
 player_node = NodePath("../player")
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
@@ -27,31 +27,31 @@ conversations = PackedStringArray("looking_for_item", "got_item", "item_desired"
 y_sort_enabled = true
 
 [node name="Felix" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-31, -49)
+position = Vector2(-62, -14)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
 
 [node name="Anna" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-252, -53)
+position = Vector2(-284, -18)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
 
 [node name="Phoenix" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(292, 61)
+position = Vector2(282, 86)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
 
 [node name="Sam" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-149, 103)
+position = Vector2(-167, 136)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
 
 [node name="Elena" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-128, -254)
+position = Vector2(-103, -209)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
@@ -73,13 +73,13 @@ position = Vector2(-131, 62)
 position = Vector2(-56, 73)
 
 [node name="trader_door" parent="Doors" instance=ExtResource("5_jr168")]
-position = Vector2(-124, -87)
+position = Vector2(-133, -93)
 
 [node name="niceguy_door" parent="Doors" instance=ExtResource("5_jr168")]
-position = Vector2(-12, -86)
+position = Vector2(-21, -94)
 
 [node name="townsman_door" parent="Doors" instance=ExtResource("5_jr168")]
-position = Vector2(102, -87)
+position = Vector2(91, -93)
 
 [node name="doctor_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(437, 25)
