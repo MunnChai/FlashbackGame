@@ -45,7 +45,7 @@ shape = SubResource("RectangleShape2D_u7ds1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o1o2u")
-animation = &"player_in"
+animation = &"player_out"
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

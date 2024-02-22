@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://b3i3yfmrssgjd"]
+[gd_scene load_steps=8 format=3 uid="uid://b3i3yfmrssgjd"]
 
+[ext_resource type="PackedScene" uid="uid://dnb8b5a8lxbhh" path="res://scenes/map.tscn" id="1_g3j1o"]
 [ext_resource type="PackedScene" uid="uid://bt3vqc1grhu6d" path="res://scenes/player.tscn" id="2_hjcp8"]
 [ext_resource type="PackedScene" uid="uid://cau45hk3r7yqt" path="res://scenes/item.tscn" id="3_qg7mt"]
 [ext_resource type="PackedScene" uid="uid://cbx4vofdues8d" path="res://scenes/npc.tscn" id="4_3t3ge"]
@@ -10,13 +11,15 @@
 [node name="main" type="Node2D"]
 y_sort_enabled = true
 
+[node name="Map" parent="." instance=ExtResource("1_g3j1o")]
+
 [node name="player" parent="." instance=ExtResource("2_hjcp8")]
 
 [node name="item" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(22, 9)
 
 [node name="npc" parent="." node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-20, 25)
+position = Vector2(24, 90)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../item")
@@ -24,8 +27,30 @@ desired_item = NodePath("../item")
 [node name="item2" parent="." instance=ExtResource("3_qg7mt")]
 position = Vector2(41, 34)
 
-[node name="door" parent="." instance=ExtResource("5_jr168")]
-position = Vector2(-58, 13)
+[node name="Doors" type="Node2D" parent="."]
+y_sort_enabled = true
+position = Vector2(-131, 62)
+
+[node name="blacksmith_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(-56, 73)
+
+[node name="trader_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(-124, -87)
+
+[node name="niceguy_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(-12, -86)
+
+[node name="townsman_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(102, -87)
+
+[node name="doctor_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(437, 25)
+
+[node name="barn_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(422, -151)
+
+[node name="mayor_door" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(3, -278)
 
 [node name="NPC_Movement_Graph" type="Node2D" parent="."]
 script = ExtResource("5_gc2jf")
