@@ -1,22 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bt3vqc1grhu6d"]
+[gd_scene load_steps=6 format=3 uid="uid://bt3vqc1grhu6d"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_2r46r"]
-[ext_resource type="Texture2D" uid="uid://dqh8ytg24avjj" path="res://assets/characters/testing/testing_default.png" id="1_dnr5g"]
+[ext_resource type="SpriteFrames" uid="uid://bu2nat0b1tolh" path="res://assets/characters/testing/player.tres" id="2_vhnia"]
 [ext_resource type="Shader" path="res://shaders/grayscale.gdshader" id="3_ddq7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfiv5"]
 size = Vector2(10, 2)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ikfxx"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_dnr5g")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_syckr"]
 shader = ExtResource("3_ddq7u")
@@ -33,7 +22,10 @@ shape = SubResource("RectangleShape2D_vfiv5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 y_sort_enabled = true
-sprite_frames = SubResource("SpriteFrames_ikfxx")
+sprite_frames = ExtResource("2_vhnia")
+animation = &"idle_down"
+autoplay = "idle_down"
+frame_progress = 0.133392
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)

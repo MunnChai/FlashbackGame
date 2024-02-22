@@ -18,7 +18,7 @@ y_sort_enabled = true
 guide = NodePath("../Kai")
 
 [node name="Kai" parent="." node_paths=PackedStringArray("player_node") instance=ExtResource("3_xl84m")]
-position = Vector2(-69, 24)
+position = Vector2(18, -7)
 player_node = NodePath("../player")
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
@@ -45,7 +45,7 @@ conversations = PackedStringArray("looking_for_item", "got_item", "item_desired"
 desired_item = NodePath("../../Items/item")
 
 [node name="Sam" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-167, 136)
+position = Vector2(-145, 116)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")

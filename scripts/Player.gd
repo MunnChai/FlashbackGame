@@ -20,12 +20,18 @@ var talking: bool
 var current_conversation: Array
 var conversation_position: int
 
+var animator: AnimatedSprite2D
+var direction_facing: String
+
 func _ready():
 	grayscale_layer = $GrayscaleShader
 	
 	dialogue_box = $DialogueBox
 	dialogue_name = $DialogueBox/MarginContainer/VBoxContainer/Name
 	dialogue_text = $DialogueBox/MarginContainer/VBoxContainer/Dialogue
+	
+	animator = $AnimatedSprite2D
+	direction_facing = "down"
 
 func _physics_process(delta):
 	
@@ -36,6 +42,7 @@ func _physics_process(delta):
 	
 	# Movement is forbidden while talking
 	handle_movement()
+	handle_animation()
 	
 	if (holding):
 		holding.position = global_position + Vector2(0, -13)
@@ -44,7 +51,6 @@ func _physics_process(delta):
 
 
 func handle_input():
-	
 	if (talking && Input.is_action_just_pressed("interact")):
 		next_voiceline()
 		return
@@ -87,6 +93,27 @@ func handle_movement():
 	if (velocity.length() > 0):
 		update_interactibles()
 
+func handle_animation():
+	if (velocity.length() == 0):
+		animator.set_animation("idle_" + direction_facing)
+		return
+	
+	if (velocity.y < -10):
+		direction_facing = "up"
+	elif (velocity.y > 10):
+		direction_facing = "down"
+	elif (velocity.x < 0):
+		direction_facing = "left"
+	elif (velocity.x > 0):
+		direction_facing = "right"
+	animator.set_animation("walk_" + direction_facing)
+	
+	if (Input.is_action_pressed("run")):
+		animator.speed_scale = 2
+	else:
+		animator.speed_scale = 1
+
+
 func add_interactible(interactible):
 	if (interactibles.size() == 0):
 		interactibles.push_front(interactible)
@@ -106,7 +133,7 @@ func add_interactible(interactible):
 	update_interactibles()
 
 func remove_interactible(interactible):
-	interactible.animator.animation = "player_out"
+	interactible.animator.set_animation("player_out")
 	interactibles.remove_at(interactibles.find(interactible))
 	update_interactibles()
 
@@ -116,12 +143,12 @@ func update_interactibles():
 	for i in interactibles.size():
 		var interactible = interactibles[i]
 		if (holding && interactible is Item):
-			interactible.animator.animation = "player_out"
+			interactible.animator.set_animation("player_out")
 		elif (can_interact):
-			interactible.animator.animation = "player_in"
+			interactible.animator.set_animation("player_in")
 			can_interact = false
 		else:
-			interactible.animator.animation = "player_out"
+			interactible.animator.set_animation("player_out")
 
 func sort_interactibles():
 	if (interactibles.is_empty()):
@@ -151,7 +178,9 @@ func start_dialogue(npc_name, conversation_name):
 	if (talking):
 		return
 	
-	var json_string = FileAccess.get_file_as_string("res://assets/dialogue/test_dialogue.json")
+	animator.speed_scale = 0
+	
+	var json_string = FileAccess.get_file_as_string("res://assets/dialogue/" + npc_name + ".json")
 	var json_object = JSON.parse_string(json_string)
 	var conversation = json_object[conversation_name]
 	
@@ -160,13 +189,14 @@ func start_dialogue(npc_name, conversation_name):
 	talking = true
 	current_conversation = conversation
 	conversation_position = 0
-	show_voiceline(conversation_position)
+	show_voiceline()
 
 func end_dialogue():
+	animator.speed_scale = 1
 	dialogue_box.visible = false
 	talking = false
 
-func show_voiceline(position):
+func show_voiceline():
 	var text_couple = current_conversation[conversation_position]
 	dialogue_name.text = text_couple["Name"]
 	dialogue_text.text = text_couple["Text"]
@@ -176,7 +206,7 @@ func next_voiceline():
 	if (conversation_position > current_conversation.size() - 1):
 		end_dialogue()
 	else:
-		show_voiceline(conversation_position)
+		show_voiceline()
 
 
 

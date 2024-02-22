@@ -1,33 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bajg02go80qkt"]
+[gd_scene load_steps=5 format=3 uid="uid://bajg02go80qkt"]
 
 [ext_resource type="Script" path="res://scenes/Guide.gd" id="1_pbfh7"]
-[ext_resource type="Texture2D" uid="uid://i52honmdkw7w" path="res://assets/characters/testing/testing_npc2.png" id="2_rd1su"]
-[ext_resource type="Texture2D" uid="uid://do3ofnpoetktr" path="res://assets/characters/testing/testing_npc1.png" id="3_wpxu6"]
+[ext_resource type="SpriteFrames" uid="uid://bu2nat0b1tolh" path="res://assets/characters/testing/player.tres" id="2_wei06"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mhht7"]
 radius = 16.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u7ds1"]
 size = Vector2(10, 3)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_o1o2u"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_rd1su")
-}],
-"loop": true,
-"name": &"player_in",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_wpxu6")
-}],
-"loop": true,
-"name": &"player_out",
-"speed": 5.0
-}]
 
 [node name="guide" type="CharacterBody2D"]
 collision_mask = 2
@@ -44,5 +24,6 @@ position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_u7ds1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_o1o2u")
+sprite_frames = ExtResource("2_wei06")
 animation = &"player_out"
+autoplay = "idle_down"

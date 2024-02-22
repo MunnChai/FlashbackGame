@@ -77,13 +77,11 @@ func _on_body_entered(body):
 	if (body is Player):
 		player = body
 		player.add_interactible(self)
-		animator.animation = "player_in"
 
 func _on_body_exited(body):
 	if (body is Player):
 		player.remove_interactible(self)
 		player = null
-		animator.animation = "player_out"
 
 func move(from_position, to_position, running):
 	path = NPCPathfinder.find_path(from_position, to_position)
