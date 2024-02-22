@@ -1,8 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dnb8b5a8lxbhh"]
+[gd_scene load_steps=13 format=3 uid="uid://dnb8b5a8lxbhh"]
 
 [ext_resource type="Texture2D" uid="uid://bqjxkf2pcywv0" path="res://assets/tiles/ground/grass.png" id="1_cp767"]
 [ext_resource type="Texture2D" uid="uid://eao52mmavfk1" path="res://assets/tiles/ground/path.png" id="2_u7koo"]
 [ext_resource type="Texture2D" uid="uid://d1qj6evf24te" path="res://assets/environment/houses/house_rustic.png" id="3_2iiow"]
+[ext_resource type="Texture2D" uid="uid://bd16t1wy10b1k" path="res://assets/environment/houses/house_rustic_roof.png" id="4_671ot"]
+[ext_resource type="Texture2D" uid="uid://8pacl6rklan4" path="res://assets/environment/houses/house_blacksmith.png" id="4_j8kbc"]
+[ext_resource type="Texture2D" uid="uid://dov4aemaghc6s" path="res://assets/environment/houses/house_blacksmith_roo.png" id="6_du0yj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xda7s"]
 texture = ExtResource("1_cp767")
@@ -1171,7 +1174,7 @@ texture = ExtResource("1_cp767")
 8:0/0/terrain = 0
 8:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:0/0/physics_layer_0/angular_velocity = 0.0
-8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.125, -5.125, 8, -4.875, 8, 8, -5.25, 8)
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -5, 8, -5, 8, 8, -5, 8)
 8:0/0/terrains_peering_bit/right_side = 0
 8:0/0/terrains_peering_bit/bottom_right_corner = 0
 8:0/0/terrains_peering_bit/bottom_side = 0
@@ -1183,7 +1186,7 @@ texture = ExtResource("1_cp767")
 10:0/0/terrain = 0
 10:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:0/0/physics_layer_0/angular_velocity = 0.0
-10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.25, 8, -5.125, 8, 8, -8, 8)
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5, -8, -5, 8, -5, 8, 8, -8, 8)
 10:0/0/terrains_peering_bit/right_side = 0
 10:0/0/terrains_peering_bit/bottom_right_corner = 0
 10:0/0/terrains_peering_bit/bottom_side = 0
@@ -1194,7 +1197,7 @@ texture = ExtResource("1_cp767")
 11:0/0/terrain = 0
 11:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:0/0/physics_layer_0/angular_velocity = 0.0
-11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.7622, 5.15905, -4.96063, 4.86142, 8, -8, 8)
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5, 5, -5, 5, 8, -8, 8)
 11:0/0/terrains_peering_bit/bottom_side = 0
 11:0/0/terrains_peering_bit/bottom_left_corner = 0
 11:0/0/terrains_peering_bit/left_side = 0
@@ -1227,7 +1230,7 @@ texture = ExtResource("1_cp767")
 8:1/0/terrain = 0
 8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:1/0/physics_layer_0/angular_velocity = 0.0
-8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.875, -8, 8, -8, 8, 8, -4.875, 8)
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -8, 8, -8, 8, 8, -5, 8)
 8:1/0/terrains_peering_bit/right_side = 0
 8:1/0/terrains_peering_bit/bottom_right_corner = 0
 8:1/0/terrains_peering_bit/bottom_side = 0
@@ -1236,11 +1239,13 @@ texture = ExtResource("1_cp767")
 9:1/0 = 0
 9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:1/0/physics_layer_0/angular_velocity = 0.0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1, 8, 1, 8, 8, -8, 8)
 10:1/0 = 0
 10:1/0/terrain_set = 0
 10:1/0/terrain = 0
 10:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:1/0/physics_layer_0/angular_velocity = 0.0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:1/0/terrains_peering_bit/right_side = 0
 10:1/0/terrains_peering_bit/bottom_right_corner = 0
 10:1/0/terrains_peering_bit/bottom_side = 0
@@ -1252,6 +1257,7 @@ texture = ExtResource("1_cp767")
 11:1/0 = 0
 11:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:1/0/physics_layer_0/angular_velocity = 0.0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, 3, 8, 3, 5, -8, 5)
 0:2/0 = 0
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
@@ -1284,6 +1290,7 @@ texture = ExtResource("1_cp767")
 9:2/0/terrain = 0
 9:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:2/0/physics_layer_0/angular_velocity = 0.0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:2/0/terrains_peering_bit/right_side = 0
 9:2/0/terrains_peering_bit/bottom_right_corner = 0
 9:2/0/terrains_peering_bit/bottom_side = 0
@@ -1295,12 +1302,13 @@ texture = ExtResource("1_cp767")
 10:2/0 = 0
 10:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:2/0/physics_layer_0/angular_velocity = 0.0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(3, -8, 8, -8, 8, 8, -8, 8, -8, 1, 3, 1)
 11:2/0 = 0
 11:2/0/terrain_set = 0
 11:2/0/terrain = 0
 11:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:2/0/physics_layer_0/angular_velocity = 0.0
-11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5.125, -8, 5, 8, -8, 8)
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5, -8, 5, 8, -8, 8)
 11:2/0/terrains_peering_bit/bottom_side = 0
 11:2/0/terrains_peering_bit/bottom_left_corner = 0
 11:2/0/terrains_peering_bit/left_side = 0
@@ -1335,7 +1343,7 @@ texture = ExtResource("1_cp767")
 8:3/0/terrain = 0
 8:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:3/0/physics_layer_0/angular_velocity = 0.0
-8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.875, -8, 8, -8, 8, 4.875, -5.25, 4.75)
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5, -8, 8, -8, 8, 5, -5, 5)
 8:3/0/terrains_peering_bit/right_side = 0
 8:3/0/terrains_peering_bit/top_side = 0
 8:3/0/terrains_peering_bit/top_right_corner = 0
@@ -1344,7 +1352,7 @@ texture = ExtResource("1_cp767")
 9:3/0/terrain = 0
 9:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:3/0/physics_layer_0/angular_velocity = 0.0
-9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.75, -8, 5)
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 5, -8, 5)
 9:3/0/terrains_peering_bit/right_side = 0
 9:3/0/terrains_peering_bit/left_side = 0
 9:3/0/terrains_peering_bit/top_left_corner = 0
@@ -1358,7 +1366,7 @@ texture = ExtResource("1_cp767")
 11:3/0/terrain = 0
 11:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 11:3/0/physics_layer_0/angular_velocity = 0.0
-11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 4.875, -8, 4.875, 4.875, -8, 5.125)
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5, -8, 5, 5, -8, 5)
 11:3/0/terrains_peering_bit/left_side = 0
 11:3/0/terrains_peering_bit/top_left_corner = 0
 11:3/0/terrains_peering_bit/top_side = 0
@@ -1389,7 +1397,7 @@ layer_0/tile_data = PackedInt32Array(786439, 720896, 7, 786438, 589824, 3, 78643
 z_index = -1
 tile_set = SubResource("TileSet_5a82u")
 format = 2
-layer_0/tile_data = PackedInt32Array(-65555, 524289, 3, -65554, 589825, 3, -65553, 589825, 3, -65552, 589825, 3, -65551, 589825, 3, -65550, 720897, 3, -131086, 720897, 2, -131087, 589825, 2, -131088, 589825, 2, -131089, 589825, 2, -131090, 655361, 1, -131091, 524289, 1, -196627, 524289, 0, -196626, 655361, 0, -196625, 655361, 0, -196624, 655361, 0, -196623, 655361, 0, -196622, 720897, 0, -196620, 524289, 0, -131084, 524289, 1, -65548, 524289, 3, -65547, 720897, 3, -65546, 524289, 3, -65545, 524289, 3, -65544, 524289, 3, -65543, 720897, 3, -131079, 720897, 2, -196615, 720897, 2, -196616, 655361, 1, -196617, 589825, 2, -196618, 655361, 1, -196619, 655361, 0, -131083, 655361, 1, -131082, 655361, 1, -131081, 655361, 1, -131080, 589825, 2, -65541, 524289, 3, -65540, 589825, 3, -65539, 589825, 3, -65538, 589825, 3, -65537, 589825, 3, -131072, 720897, 3, -262144, 720897, 0, -196609, 655361, 0, -196610, 655361, 0, -196611, 655361, 0, -196612, 655361, 0, -131077, 524289, 1, -131076, 655361, 1, -131075, 655361, 1, -131074, 655361, 1, -131073, 589825, 2, -196613, 524289, 0, -196608, 720897, 2)
+layer_0/tile_data = PackedInt32Array(-65555, 524289, 3, -65554, 589825, 3, -65553, 589825, 3, -65552, 589825, 3, -65551, 589825, 3, -65550, 720897, 3, -131086, 720897, 2, -131087, 589825, 2, -131088, 589825, 2, -131089, 589825, 2, -131090, 655361, 1, -131091, 524289, 1, -196627, 524289, 0, -196626, 655361, 0, -196625, 655361, 0, -196624, 655361, 0, -196623, 655361, 0, -196622, 720897, 0, -196620, 524289, 0, -131084, 524289, 1, -65548, 524289, 3, -65547, 589825, 3, -65546, 589825, 3, -65545, 589825, 3, -65544, 589825, 3, -65543, 720897, 3, -131079, 720897, 2, -196615, 720897, 0, -196616, 655361, 0, -196617, 655361, 0, -196618, 655361, 0, -196619, 655361, 0, -131083, 655361, 1, -131082, 655361, 1, -131081, 655361, 1, -131080, 589825, 2, -65541, 524289, 3, -65540, 589825, 3, -65539, 589825, 3, -65538, 589825, 3, -65537, 589825, 3, -131072, 720897, 3, -262144, 720897, 0, -196609, 655361, 0, -196610, 655361, 0, -196611, 655361, 0, -196612, 655361, 0, -131077, 524289, 1, -131076, 589825, 2, -131075, 655361, 1, -131074, 589825, 2, -131073, 655361, 1, -196613, 524289, 0, -196608, 720897, 2, 589818, 655361, 1, 589817, 655361, 1, 589816, 655361, 1, 524280, 655361, 1, 524281, 655361, 1, 524282, 655361, 1, 458746, 655361, 1, 458745, 655361, 1, 458744, 655361, 1, 458743, 655361, 1, 458742, 655361, 1, 458741, 655361, 1, 458740, 655361, 1, 458739, 655361, 1, 458738, 655361, 1, 393202, 655361, 1, 393203, 655361, 1, 393204, 655361, 1, 393205, 655361, 1, 393206, 655361, 1, 393207, 655361, 1, 393208, 655361, 1, 393209, 655361, 1, 393210, 655361, 1, 524274, 655361, 1, 524275, 589825, 3, 524276, 589825, 3, 524277, 589825, 3, 524278, 589825, 3, 524279, 720897, 1, 589811, 589825, 1, 589814, 589825, 1, 589815, 655361, 2, 589810, 655361, 1)
 
 [node name="Houses" type="Node2D" parent="."]
 
@@ -1398,12 +1406,32 @@ z_index = -1
 position = Vector2(-32, -52)
 texture = ExtResource("3_2iiow")
 
+[node name="Roof" type="Sprite2D" parent="Houses/Felix House"]
+z_index = 2
+texture = ExtResource("4_671ot")
+
 [node name="Anna House" type="Sprite2D" parent="Houses"]
 z_index = -1
 position = Vector2(-256, -52)
 texture = ExtResource("3_2iiow")
 
+[node name="Roof" type="Sprite2D" parent="Houses/Anna House"]
+z_index = 2
+texture = ExtResource("4_671ot")
+
 [node name="Kai House" type="Sprite2D" parent="Houses"]
 z_index = -1
 position = Vector2(-144, -52)
 texture = ExtResource("3_2iiow")
+
+[node name="Roof" type="Sprite2D" parent="Houses/Kai House"]
+z_index = 2
+texture = ExtResource("4_671ot")
+
+[node name="Sam House" type="Sprite2D" parent="Houses"]
+position = Vector2(-152, 112)
+texture = ExtResource("4_j8kbc")
+
+[node name="Roof" type="Sprite2D" parent="Houses/Sam House"]
+z_index = 2
+texture = ExtResource("6_du0yj")

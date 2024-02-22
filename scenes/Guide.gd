@@ -16,10 +16,12 @@ func _physics_process(delta):
 		return
 	var follow_position = player_node.position
 	
-	if ((follow_position - position).length() < 30):
-		velocity = velocity.move_toward(Vector2(0, 0), 400 * delta)
+	if ((follow_position - position).length() < 25):
+		velocity = velocity.move_toward(Vector2(0, 0), 500 * delta)
+	elif ((follow_position - position).length() > 40):
+		velocity = velocity.move_toward((follow_position - position).normalized() * RUN_SPEED * 1.5, 750 * delta)
 	else:
-		velocity = velocity.move_toward((follow_position - position).normalized() * RUN_SPEED, 400 * delta)
+		velocity = velocity.move_toward((follow_position - position).normalized() * RUN_SPEED, 750 * delta)
 	move_and_slide()
 
 func interact():

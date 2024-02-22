@@ -70,7 +70,7 @@ y_sort_enabled = true
 position = Vector2(-131, 62)
 
 [node name="blacksmith_door" parent="Doors" instance=ExtResource("5_jr168")]
-position = Vector2(-56, 73)
+position = Vector2(-47, 51)
 
 [node name="trader_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(-133, -93)
