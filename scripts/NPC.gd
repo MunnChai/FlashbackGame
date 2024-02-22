@@ -52,6 +52,9 @@ func handle_movement():
 func interact():
 	if (!player):
 		return
+	if (conversations.is_empty()):
+		print("No conversations added to ", name, "!")
+		return
 	
 	var conv
 	if (player.holding):

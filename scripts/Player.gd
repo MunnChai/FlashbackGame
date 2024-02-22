@@ -1,6 +1,8 @@
 class_name Player
 extends CharacterBody2D
 
+@export var guide: Guide
+
 const WALK_SPEED = 75
 const RUN_SPEED = 150
 
@@ -82,14 +84,13 @@ func handle_movement():
 		velocity *= 2
 	
 	move_and_slide()
-
-
-
+	if (velocity.length() > 0):
+		update_interactibles()
 
 func add_interactible(interactible):
 	if (interactibles.size() == 0):
 		interactibles.push_front(interactible)
-		update_top_interactible()
+		update_interactibles()
 		return
 	
 	for i in interactibles.size():
@@ -98,18 +99,19 @@ func add_interactible(interactible):
 		
 		if (to_be_added_y_pos > interactible_y_pos):
 			interactibles.insert(i, interactible)
-			update_top_interactible()
+			update_interactibles()
 			return
 	
 	interactibles.push_back(interactible)
-	update_top_interactible()
+	update_interactibles()
 
 func remove_interactible(interactible):
 	interactible.animator.animation = "player_out"
 	interactibles.remove_at(interactibles.find(interactible))
-	update_top_interactible()
+	update_interactibles()
 
-func update_top_interactible():
+func update_interactibles():
+	sort_interactibles()
 	var can_interact = true
 	for i in interactibles.size():
 		var interactible = interactibles[i]
@@ -121,6 +123,16 @@ func update_top_interactible():
 		else:
 			interactible.animator.animation = "player_out"
 
+func sort_interactibles():
+	if (interactibles.is_empty()):
+		return
+	interactibles.sort_custom(closer_to_player)
+
+func closer_to_player(a, b) -> bool:
+	var a_distance = (a.position - position).length()
+	var b_distance = (b.position - position).length()
+	
+	return a_distance < b_distance
 
 func pick_up_item(item):
 	if (talking || holding):

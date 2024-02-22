@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://b3i3yfmrssgjd"]
+[gd_scene load_steps=9 format=3 uid="uid://b3i3yfmrssgjd"]
 
 [ext_resource type="PackedScene" uid="uid://dnb8b5a8lxbhh" path="res://scenes/map.tscn" id="1_g3j1o"]
 [ext_resource type="PackedScene" uid="uid://bt3vqc1grhu6d" path="res://scenes/player.tscn" id="2_hjcp8"]
 [ext_resource type="PackedScene" uid="uid://cau45hk3r7yqt" path="res://scenes/item.tscn" id="3_qg7mt"]
+[ext_resource type="PackedScene" uid="uid://bajg02go80qkt" path="res://scenes/guide.tscn" id="3_xl84m"]
 [ext_resource type="PackedScene" uid="uid://cbx4vofdues8d" path="res://scenes/npc.tscn" id="4_3t3ge"]
 [ext_resource type="Script" path="res://scripts/NPCPathfinder.gd" id="5_gc2jf"]
 [ext_resource type="PackedScene" uid="uid://bwxqlk0q24xwb" path="res://scenes/door.tscn" id="5_jr168"]
@@ -13,13 +14,44 @@ y_sort_enabled = true
 
 [node name="Map" parent="." instance=ExtResource("1_g3j1o")]
 
-[node name="player" parent="." instance=ExtResource("2_hjcp8")]
+[node name="player" parent="." node_paths=PackedStringArray("guide") instance=ExtResource("2_hjcp8")]
+guide = NodePath("../Kai")
+
+[node name="Kai" parent="." node_paths=PackedStringArray("player_node") instance=ExtResource("3_xl84m")]
+position = Vector2(-112, 13)
+player_node = NodePath("../player")
+npc_name = "test_dialogue"
+conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 
 [node name="NPCs" type="Node2D" parent="."]
 y_sort_enabled = true
 
-[node name="npc" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(24, 90)
+[node name="Felix" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
+position = Vector2(-31, -49)
+npc_name = "test_dialogue"
+conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
+desired_item = NodePath("../../Items/item")
+
+[node name="Anna" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
+position = Vector2(-252, -53)
+npc_name = "test_dialogue"
+conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
+desired_item = NodePath("../../Items/item")
+
+[node name="Phoenix" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
+position = Vector2(292, 61)
+npc_name = "test_dialogue"
+conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
+desired_item = NodePath("../../Items/item")
+
+[node name="Sam" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
+position = Vector2(-149, 103)
+npc_name = "test_dialogue"
+conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
+desired_item = NodePath("../../Items/item")
+
+[node name="Elena" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
+position = Vector2(-128, -254)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")

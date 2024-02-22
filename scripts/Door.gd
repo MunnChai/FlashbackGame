@@ -32,3 +32,4 @@ func _on_body_exited(body):
 # requires player!
 func teleport():
 	player.position = destination
+	player.guide.position = destination
