@@ -15,16 +15,22 @@ y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("2_hjcp8")]
 
-[node name="item" parent="." instance=ExtResource("3_qg7mt")]
-position = Vector2(22, 9)
+[node name="NPCs" type="Node2D" parent="."]
+y_sort_enabled = true
 
-[node name="npc" parent="." node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
+[node name="npc" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
 position = Vector2(24, 90)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
-desired_item = NodePath("../item")
+desired_item = NodePath("../../Items/item")
 
-[node name="item2" parent="." instance=ExtResource("3_qg7mt")]
+[node name="Items" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="item" parent="Items" instance=ExtResource("3_qg7mt")]
+position = Vector2(22, 9)
+
+[node name="item2" parent="Items" instance=ExtResource("3_qg7mt")]
 position = Vector2(41, 34)
 
 [node name="Doors" type="Node2D" parent="."]
