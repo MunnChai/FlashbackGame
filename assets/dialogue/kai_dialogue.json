@@ -1,0 +1,111 @@
+{
+	"wake up": [
+		{
+			"Name": "???",
+			"Text": "Good morning!"
+		},
+		{
+			"Name": "???",
+			"Text": "Or more like good afternoon, now. You slept for a while."
+		},
+		{
+			"Name": "???",
+			"Text": "Good afternoon... where am I?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "You're in my room! That's Kai's room, by the way. I'm Kai."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Anyways, care to explain what you were doing sleeping the day away by that elm tree?"
+		},
+		{
+			"Name": "???",
+			"Text": "... I literally have no idea what you're talking about."	
+		},
+		{
+			"Name": "Kai",
+			"Text": "You don't know? What do you know then?"
+		},
+		{
+			"Name": "???",
+			"Text": "..."
+		},
+		{
+			"Name": "Kai",
+			"Text": "..."
+		},
+		{
+			"Name": "???",
+			"Text": "... Nothing?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Nothing??? Not even your name?"
+		},
+		{
+			"Name": "???",
+			"Text": "Nope."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Well what on Earth am I going to call you then? Hm..."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Ah! Got it."
+		},
+		{
+			"Name": "Kai",
+			"Text": "I'll call you Elm. Last name Tree. I hereby dub thee Elm Tree."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Thanks, I hate it."
+		}
+	],
+	
+	"knife lost": [
+		{
+			"Name": "Kai",
+			"Text": "You know, after dragging you back from the forest, I seem to have misplaced my hunting knife."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Hunting knife? You're a hunter?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Haha, you couldn't tell? Yeah, I'm one of the village hunters."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Not much of a hunter anymore though. What's a hunter without a hunting knife?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "A hunter?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "No! You don't understand. That knife was a gift from my grandfather! My pride and joy. My flesh and blood."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Hm. He did help me out by bringing me to his place. Maybe I should help him.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Where did you see it last?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Well, I definitely had it when I found you. Scared off a wolf that was nearby."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Maybe you dropped it on your way back then?"
+		}
+	]
+}
