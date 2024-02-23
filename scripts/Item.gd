@@ -1,11 +1,15 @@
 class_name Item
-extends Area2D
+extends RigidBody2D
+
+@export var item_mass: float
 
 var player
 var animator
 
 func _ready():
 	animator = $AnimatedSprite2D
+	lock_rotation = true
+	mass = item_mass
 
 func interact():
 	if (!player):

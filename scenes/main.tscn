@@ -61,9 +61,12 @@ y_sort_enabled = true
 
 [node name="item" parent="Items" instance=ExtResource("3_qg7mt")]
 position = Vector2(22, 9)
+angular_damp = 2.0
+item_mass = 1.5
 
 [node name="item2" parent="Items" instance=ExtResource("3_qg7mt")]
 position = Vector2(41, 34)
+item_mass = 3.0
 
 [node name="Doors" type="Node2D" parent="."]
 y_sort_enabled = true

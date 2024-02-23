@@ -6,6 +6,8 @@ extends CharacterBody2D
 const WALK_SPEED = 75
 const RUN_SPEED = 150
 
+const THROW_FORCE = 400
+
 var holding: Item
 var interactibles: Array
 
@@ -134,8 +136,9 @@ func add_interactible(interactible):
 
 func remove_interactible(interactible):
 	interactible.animator.set_animation("player_out")
-	interactibles.remove_at(interactibles.find(interactible))
-	update_interactibles()
+	if (interactibles.find(interactible) >= 0):
+		interactibles.remove_at(interactibles.find(interactible))
+		update_interactibles()
 
 func update_interactibles():
 	sort_interactibles()
@@ -166,9 +169,13 @@ func pick_up_item(item):
 		return
 	remove_interactible(item)
 	holding = item
+	holding.linear_velocity = Vector2(0, 0)
 
 func drop_item():
-	holding.position = global_position + Vector2(0, 8)
+	#holding.position = global_position + Vector2(0, 8)
+	holding.apply_force(velocity * THROW_FORCE)
+	holding.apply_force(Vector2(0, 25 * THROW_FORCE))
+	print("Applied force: ", velocity * THROW_FORCE)
 	holding = null
 
 
