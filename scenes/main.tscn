@@ -27,13 +27,13 @@ conversations = PackedStringArray("looking_for_item", "got_item", "item_desired"
 y_sort_enabled = true
 
 [node name="Felix" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-62, -14)
+position = Vector2(563, 616)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
 
 [node name="Anna" parent="NPCs" node_paths=PackedStringArray("desired_item") instance=ExtResource("4_3t3ge")]
-position = Vector2(-284, -18)
+position = Vector2(-670, 566)
 npc_name = "test_dialogue"
 conversations = PackedStringArray("looking_for_item", "got_item", "item_desired", "item_general")
 desired_item = NodePath("../../Items/item")
@@ -74,15 +74,35 @@ position = Vector2(-131, 62)
 
 [node name="blacksmith_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(-47, 51)
+destination = Vector2(-120, 1052)
+
+[node name="blacksmith_indoor" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(11, 986)
+destination = Vector2(-178, 128)
 
 [node name="trader_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(-133, -93)
+destination = Vector2(-728, 635)
+
+[node name="trader_indoor" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(-597, 569)
+destination = Vector2(-264, -16)
 
 [node name="niceguy_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(-21, -94)
+destination = Vector2(-104, 651)
+
+[node name="niceguy_indoor2" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(27, 585)
+destination = Vector2(-152, -16)
 
 [node name="townsman_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(91, -93)
+destination = Vector2(504, 666)
+
+[node name="townsman_indoor2" parent="Doors" instance=ExtResource("5_jr168")]
+position = Vector2(635, 600)
+destination = Vector2(-39, -16)
 
 [node name="doctor_door" parent="Doors" instance=ExtResource("5_jr168")]
 position = Vector2(437, 25)
@@ -198,3 +218,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.968627, 0, 0.211765, 1)
 metadata/_edit_use_anchors_ = true
+
+[node name="positioning node" type="Node2D" parent="."]
+position = Vector2(-39, -16)
