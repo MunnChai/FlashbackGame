@@ -1,0 +1,80 @@
+{
+	"item found": [
+		{
+			"Name": "Elm",
+			"Text": "(It's really there.)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Oh my god, it's really there!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "How did you think of that, Elm? Are you some kind of psychic?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Ah... lucky guess?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "I guess so."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Well, now that we're outside, I may as well tell you a bit about the village."
+		},
+		{
+			"Name": "Kai",
+			"Text": "We aren't very big, if you couldn't already tell. We've got a blacksmith, a ranch, a doctor, and a handful of villagers."
+		},
+		{
+			"Name": "Kai",
+			"Text": "They're all really nice people! I'll introduce you."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Although... a word of warning. Some of them might not be super amicable right now."
+		},
+		{
+			"Name": "Elm",
+			"Text": "I thought you just said they were all really nice?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "They are!! I promise. It's just that..."
+		},
+		{
+			"Name": "Kai",
+			"Text": "The mayor went missing about a week ago."
+		},
+		{
+			"Name": "Elm",
+			"Text": "The mayor?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Mr. Diaz. One of the best men I know. Everyone in the village loves him. But no one's heard anything from him for a week now."
+		},
+		{
+			"Name": "Kai",
+			"Text": "No one really knows all the details. His wife just woke up one day and there was no trace of him anywhere in the house."
+		},
+		{
+			"Name": "Kai",
+			"Text": "We searched the whole village, too. No dice."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(How does a whole person just go missing? Strange...)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Anyways, that's all to say that the villagers might be a bit preoccupied. But I'm sure they'd love to meet you!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Come on. Let's go meet Hank. He works at the ranch. Should be just northeast of here."
+		}
+	]
+}

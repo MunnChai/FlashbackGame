@@ -65,8 +65,7 @@
 			"Text": "Thanks, I hate it."
 		}
 	],
-	
-	"knife lost": [
+	"item desired": [
 		{
 			"Name": "Kai",
 			"Text": "You know, after dragging you back from the forest, I seem to have misplaced my hunting knife."
@@ -92,20 +91,56 @@
 			"Text": "No! You don't understand. That knife was a gift from my grandfather! My pride and joy. My flesh and blood."
 		},
 		{
-			"Name": "Elm",
-			"Text": "(Hm. He did help me out by bringing me to his place. Maybe I should help him.)"
-		},
+			"Name": "Kai",
+			"Text": "I just wish I knew were I dropped it. Maybe if I think hard enough..."
+		}
+	],
+	"end tutorial fb": [
 		{
 			"Name": "Elm",
-			"Text": "Where did you see it last?"
+			"Text": "(What was that?)"
 		},
 		{
 			"Name": "Kai",
-			"Text": "Well, I definitely had it when I found you. Scared off a wolf that was nearby."
+			"Text": "Are you alright? You look a bit pale."
 		},
 		{
 			"Name": "Elm",
-			"Text": "Maybe you dropped it on your way back then?"
+			"Text": "I'm fine. Just a bit dizzy."
+		},
+		{
+			"Name": "Elm",
+			"Text": "About your knife -- did you ever check outside your house, by any chance? On the left."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Huh? Why so specific?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "I guess I haven't checked there yet, though. It's worth a shot."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Come on! Maybe some fresh air will help you feel a bit better."
+		}
+	],
+	"idle1": [
+		{
+			"Name": "Kai",
+			"Text": "Outside my house, on the left. What a strange place to suggest..."
+		}
+	],
+	"idle2": [
+		{
+			"Name": "Kai",
+			"Text": "Hank works at the big barn in the upper right corner of the village. You can't miss it!"
+		}
+	],
+	"idle3": [
+		{
+			"Name": "Kai",
+			"Text": "Anna's house is just to the left of mine! We should be able to find her there."
 		}
 	]
 }

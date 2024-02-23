@@ -1,0 +1,164 @@
+{
+	"meet hank": [
+		{
+			"Name": "Kai",
+			"Text": "Hank!"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Kai!! And new friend!!!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(My ears...)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "This is Elm! I found them while I was hunting this morning. I'm showing them around the village."
+		},
+		{
+			"Name": "Hank",
+			"Text": "It's nice to meet you, Elm!! I'm Hank!!! I take care of the village's pigs and cows and chickens!!!!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "It's nice to meet you too, Hank."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(He has a strong grip. It's almost as strong as his voice.)"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Say, Kai! You wouldn't have happened to have seen my animal feed lying anywhere, have you??"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Your feed? No, I haven't. Has it also gone missing?"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Yes!! I had it this morning when I was feeding Ozzy! But when I went to fetch her lunch, it was gone!!"
+		},
+		{
+			"Name": "Hank",
+			"Text": "I've been looking everywhere for the past hour!! And Ozzy's getting hungrier by the minute!!!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Oh no. We can't let Oswald stay hungry! Last time she was too hungry, she..."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Is this a bad time to ask who Ozzy is?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Ozzy is Hank's prized cow."
+		},
+		{
+			"Name": "Hank",
+			"Text": "Yes!! Short for Oswald the Eighth!!!"
+		},
+		{
+			"Name": "Hank",
+			"Text": "And now she is hungry!!!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Hm. I wonder if I can...)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Maybe I can help."
+		}
+	],
+	"end feed fb": [
+		{
+			"Name": "Elm",
+			"Text": "(Ugh. Those trips aren't good for my stomach.)"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Are you okay, friend??? Do you want some milk????"
+		},
+		{
+			"Name": "Elm",
+			"Text": "No no, I'm fine."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(His loud voice is actually kind of grounding.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Hank, have you checked near the village entrance?"
+		},
+		{
+			"Name": "Hank",
+			"Text": "The village entrance??? No????"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Another one of your cryptic intuitions?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Something like that."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Lead the way, then!"
+		}
+	],
+	"return feed": [
+		{
+			"Name": "Hank",
+			"Text": "Ozzy's lunch!!!!"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Where was it????"
+		},
+		{
+			"Name": "Kai",
+			"Text": "By the village entrance! Elm's got a good intuition."
+		},
+		{
+			"Name": "Hank",
+			"Text": "The village entrance???"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Oh!!!!"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Anna must have accidentally taken it when she picked up some of my exports!!!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Anna? New character?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "She's one of the village's traders! Handles the imports, exports, all that stuff."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Actually, let's go meet her next! Her house is just to the left of mine."
+		},
+		{
+			"Name": "Kai",
+			"Text": "We'll see you later then, Hank!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "See you, Hank."
+		},
+		{
+			"Name": "Hank",
+			"Text": "Goodbye Kai!! Goodbye Elm!!!"
+		}
+	]
+}

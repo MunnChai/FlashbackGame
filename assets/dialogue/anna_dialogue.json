@@ -1,0 +1,166 @@
+{
+	"meet anna": [
+		{
+			"Name": "???",
+			"Text": "... so really, ma belle, I think it imperative that you reconsider your choice."
+		},
+		{
+			"Name": "???",
+			"Text": "Please, Felix. I've told you many times already. My decision is final."
+		},
+		{
+			"Name": "Felix",
+			"Text": "Your decision has been made with greate haste, Belle. Perhaps I could -"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Anna! And Felix... oh, sorry, are we interrupting something?"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Oh! Good afternoon, Kai. And who might you be?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "I'm... Elm. I'm Kai's friend."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Yes! A new friend. I'm showing them around the village."
+		},
+		{
+			"Name": "Felix",
+			"Text": "Elm! What a splendid name. It reminds me of... green... nature... leaves..."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Try trees."
+		},
+		{
+			"Name": "Felix",
+			"Text": "Yes! Precisely. Trees. I will call you Tree. I think it suits you quite well."
+		},
+		{
+			"Name": "Elm",
+			"Text": "That's my last name, actually."
+		},
+		{
+			"Name": "Kai",
+			"Text": "So what were you two talking about just now?"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Ah... well. Felix here was just running his little campaign speel for me. Again."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Ah."
+		},
+		{
+			"Name": "Felix",
+			"Text": "This village has been without a mayor for a week now. We're falling into shambles!"
+		},
+		{
+			"Name": "Felix",
+			"Text": "Someone needs to reassume power now. And if no one else is going to do it, it may as well be me."
+		},
+		{
+			"Name": "Felix",
+			"Text": "Do you not think so, young Tree?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Ah. I'd almost forgotten about everything with the mayor.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Uh... I guess?"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Don't mind him, Elm."
+		},
+		{
+			"Name": "Felix",
+			"Text": "Hmph. Well, heed my word, Belle. I'll let you return to your work now."
+		},
+		{
+			"Name": "Anna",
+			"Text": "Actually I can't."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Can't what? Return to your work?"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Yes. I can't find my horse-riding permit. Perhaps it got stolen."
+		},
+		{
+			"Name": "Elm",
+			"Text": "... Horse? Horse-riding permit? Do people steal those in this village??"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Maybe. Regardless, I can't send out these exports without it."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Oh no. Everyone really is losing everything today."
+		},
+		{
+			"Name": "Anna",
+			"Text": "Everyone?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "I lost my hunting knife this morning and Hank's animal feed got misplaced."
+		},
+		{
+			"Name": "Felix",
+			"Text": "What did I say! The town's falling into shambles. We're falling apart."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Not for long, we aren't! Elm's been helping out. They're really good at finding things."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Maybe we can help you, Anna!"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Really? That would be amazing. I'd like to get this shipment out as soon as possible."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Of course."
+		}
+	],
+	"end permit fb": [
+		{
+			"Name": "Elm",
+			"Text": "(Oof. I feel better than last time, but I still feel like I got sucker-punched in the gut.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(That aside -- did Felix really steal the permit?)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Ah! The Elm-patented Face Of Fatigue. What's your guess?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "I... Let me go check."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Again with your cryptic messages!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "I'll come with. I want to see if you're right."
+		}
+	]
+}
