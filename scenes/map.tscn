@@ -8,10 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://8pacl6rklan4" path="res://assets/environment/houses/house_blacksmith.png" id="4_j8kbc"]
 [ext_resource type="Texture2D" uid="uid://bn8js3j8d5ysx" path="res://assets/tiles/indoor/indoor_tiles.png" id="4_jb0v8"]
 [ext_resource type="Texture2D" uid="uid://dov4aemaghc6s" path="res://assets/environment/houses/house_blacksmith_roo.png" id="6_du0yj"]
-[ext_resource type="Texture2D" uid="uid://ctej0uijnb7d1" path="res://assets/environment/houses/house_doctor.png" id="9_d2wav"]
-[ext_resource type="Texture2D" uid="uid://b1na7w76lp0nl" path="res://assets/environment/houses/house_doctor_roof.png" id="10_5b8sm"]
-[ext_resource type="Texture2D" uid="uid://cpejdv0v8iaxn" path="res://assets/environment/houses/house_barn.png" id="11_e55vy"]
-[ext_resource type="Texture2D" uid="uid://bv38kx3iquy7g" path="res://assets/environment/houses/house_barn_roof.png" id="12_nvc5h"]
+[ext_resource type="Texture2D" path="res://assets/environment/houses/house_doctor.png" id="9_d2wav"]
+[ext_resource type="Texture2D" path="res://assets/environment/houses/house_doctor_roof.png" id="10_5b8sm"]
+[ext_resource type="Texture2D" path="res://assets/environment/houses/house_barn.png" id="11_e55vy"]
+[ext_resource type="Texture2D" path="res://assets/environment/houses/house_barn_roof.png" id="12_nvc5h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xda7s"]
 texture = ExtResource("1_cp767")
