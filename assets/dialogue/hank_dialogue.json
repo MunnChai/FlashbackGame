@@ -1,5 +1,5 @@
 {
-	"meet hank": [
+	"item desired": [
 		{
 			"Name": "Kai",
 			"Text": "Hank!"
@@ -111,7 +111,7 @@
 			"Text": "Lead the way, then!"
 		}
 	],
-	"item desired": [
+	"item returned": [
 		{
 			"Name": "Hank",
 			"Text": "Ozzy's lunch!!!!"
@@ -135,6 +135,14 @@
 		{
 			"Name": "Hank",
 			"Text": "Anna must have accidentally taken it when she picked up some of my exports!!!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Anna?)"
 		},
 		{
 			"Name": "Elm",
