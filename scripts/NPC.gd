@@ -59,19 +59,15 @@ func interact():
 	var conv
 	if (player.holding):
 		if (player.holding == desired_item):
-			conv = "item_desired"
-			current_conversation += 1
+			conv = "item desired"
 			var item = player.holding
 			player.drop_item()
 			item.queue_free()
 		else:
-			conv = "item_general"
+			conv = conversations[current_conversation]
 	else:
 		conv = conversations[current_conversation]
 	player.start_dialogue(npc_name, conv)
-
-func set_conversation(i):
-	current_conversation = i
 
 func _on_body_entered(body):
 	if (body is Player):

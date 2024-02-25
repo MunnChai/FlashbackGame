@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bajg02go80qkt"]
 
 [ext_resource type="Script" path="res://scenes/Guide.gd" id="1_pbfh7"]
-[ext_resource type="SpriteFrames" uid="uid://bu2nat0b1tolh" path="res://assets/characters/testing/player.tres" id="2_wei06"]
+[ext_resource type="SpriteFrames" uid="uid://lsyqhhufwbxt" path="res://assets/characters/testing/player.tres" id="2_wei06"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mhht7"]
 radius = 16.0

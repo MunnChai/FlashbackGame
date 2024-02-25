@@ -17,7 +17,7 @@ func _process(delta):
 func interact():
 	if (!player):
 		return
-	teleport()
+	player.teleport(destination)
 
 func _on_body_entered(body):
 	if (body is Player):
@@ -28,8 +28,3 @@ func _on_body_exited(body):
 	if (body is Player):
 		player.remove_interactible(self)
 		player = null
-
-# requires player!
-func teleport():
-	player.position = destination
-	player.guide.position = destination

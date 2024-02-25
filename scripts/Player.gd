@@ -135,7 +135,9 @@ func add_interactible(interactible):
 	update_interactibles()
 
 func remove_interactible(interactible):
-	interactible.animator.set_animation("player_out")
+	if (interactible.animator.sprite_frames):
+		interactible.animator.set_animation("player_out")
+	
 	if (interactibles.find(interactible) >= 0):
 		interactibles.remove_at(interactibles.find(interactible))
 		update_interactibles()
@@ -145,13 +147,14 @@ func update_interactibles():
 	var can_interact = true
 	for i in interactibles.size():
 		var interactible = interactibles[i]
-		if (holding && interactible is Item):
-			interactible.animator.set_animation("player_out")
-		elif (can_interact):
-			interactible.animator.set_animation("player_in")
-			can_interact = false
-		else:
-			interactible.animator.set_animation("player_out")
+		if (interactible.animator.sprite_frames):
+			if (holding && interactible is Item):
+				interactible.animator.set_animation("player_out")
+			elif (can_interact):
+				interactible.animator.set_animation("player_in")
+				can_interact = false
+			else:
+				interactible.animator.set_animation("player_out")
 
 func sort_interactibles():
 	if (interactibles.is_empty()):
@@ -172,10 +175,8 @@ func pick_up_item(item):
 	holding.linear_velocity = Vector2(0, 0)
 
 func drop_item():
-	#holding.position = global_position + Vector2(0, 8)
+	holding.position = global_position + Vector2(0, 4)
 	holding.apply_force(velocity * THROW_FORCE)
-	holding.apply_force(Vector2(0, 25 * THROW_FORCE))
-	print("Applied force: ", velocity * THROW_FORCE)
 	holding = null
 
 
@@ -215,7 +216,25 @@ func next_voiceline():
 	else:
 		show_voiceline()
 
-
+func teleport(destination):
+	var fader = $Fader
+	fader.visible = true
+	fader.color.a = 0
+	while (fader.color.a < 1):
+		await get_tree().create_timer(0.01).timeout
+		if (fader.color.a + 0.05 > 1):
+			fader.color.a = 1
+		else:
+			fader.color.a += 0.05
+		
+			fader.color.a = 1
+	position = destination
+	guide.position = destination
+	while (fader.color.a > 0):
+		await get_tree().create_timer(0.01).timeout
+		fader.color.a -= 0.035
+	fader.visible = false
+	fader.color.a = 0
 
 
 func grayscale_on():

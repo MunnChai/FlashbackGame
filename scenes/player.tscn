@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bt3vqc1grhu6d"]
+[gd_scene load_steps=7 format=3 uid="uid://bt3vqc1grhu6d"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_2r46r"]
 [ext_resource type="SpriteFrames" uid="uid://lsyqhhufwbxt" path="res://assets/characters/testing/player.tres" id="2_vhnia"]
+[ext_resource type="Script" path="res://scenes/CameraFollow.gd" id="3_5selh"]
 [ext_resource type="Shader" path="res://shaders/grayscale.gdshader" id="3_ddq7u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vfiv5"]
@@ -29,6 +30,7 @@ frame_progress = 0.133392
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+script = ExtResource("3_5selh")
 
 [node name="GrayscaleShader" type="Control" parent="."]
 visible = false
@@ -103,3 +105,12 @@ theme_override_font_sizes/bold_italics_font_size = 7
 theme_override_font_sizes/mono_font_size = 7
 text = "Dialogue
 "
+
+[node name="Fader" type="ColorRect" parent="."]
+z_index = 5
+offset_left = -241.0
+offset_top = -138.0
+offset_right = 231.0
+offset_bottom = 129.0
+color = Color(0, 0, 0, 0)
+metadata/_edit_use_anchors_ = true
