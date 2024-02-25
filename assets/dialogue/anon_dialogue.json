@@ -1,0 +1,104 @@
+{
+	"fb2": [
+		{
+			"Name": "???",
+			"Text": "How much do you have left?"
+		},
+		{
+			"Name": "???",
+			"Text": "Not much, sir. Resources have been running scarce lately. Is this enough?"
+		},
+		{
+			"Name": "???",
+			"Text": "Yes... this should be enough. Thank you."
+		},
+		{
+			"Name": "???",
+			"Text": "Of course, sir. You have done much for our village; this is but a small favour to return."
+		},
+		{
+			"Name": "???",
+			"Text": "May I inquire what you need this for though, sir?"
+		},
+		{
+			"Name": "???",
+			"Text": "Ah, this is simply for a friend."
+		},
+		{
+			"Name": "???",
+			"Text": "I see."
+		},
+		{
+			"Name": "???",
+			"Text": "Have a good night then, sir."
+		},
+		{
+			"Name": "???",
+			"Text": "Good night."
+		}
+	],
+	"fb3": [
+		{
+			"Name": "???",
+			"Text": "39.5 degrees Celsius... oh, darling."
+		},
+		{
+			"Name": "???",
+			"Text": "How did it get this severe?"
+		},
+		{
+			"Name": "???",
+			"Text": "And Phoenix says he's run out of medicine. Oh, please stop coughing... please..."
+		}
+	],
+	"fb4": [
+		{
+			"Name": "???",
+			"Text": "What? What do you mean there's no more??"
+		},
+		{
+			"Name": "???",
+			"Text": "I used it all."
+		},
+		{
+			"Name": "???",
+			"Text": "Phoenix told me he'd given the rest to you only yesterday. He told me that you should have some to spare."
+		},
+		{
+			"Name": "???",
+			"Text": "I'm sorry. I really don't have any left."
+		},
+		{
+			"Name": "???",
+			"Text": "That's bullshit. That's bullshit!"
+		},
+		{
+			"Name": "???",
+			"Text": "My child -- my child is dying. I need that medicine. You can't have used it all."
+		},
+		{
+			"Name": "???",
+			"Text": "I'm sorry. It was an emergency for me as well."
+		},
+		{
+			"Name": "???",
+			"Text": "Fuck you. My child is dying, and you're justifying this with your own emergency?"
+		},
+		{
+			"Name": "???",
+			"Text": "Fuck you, Diaz."
+		},
+		{
+			"Name": "???",
+			"Text": "... I'm sorry."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(?!)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Mr. Diaz??)"
+		}
+	]
+}

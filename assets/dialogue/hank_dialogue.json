@@ -1,5 +1,5 @@
 {
-	"meet hank": [
+	"item desired": [
 		{
 			"Name": "Kai",
 			"Text": "Hank!"
@@ -73,45 +73,7 @@
 			"Text": "Maybe I can help."
 		}
 	],
-	"end feed fb": [
-		{
-			"Name": "Elm",
-			"Text": "(Ugh. Those trips aren't good for my stomach.)"
-		},
-		{
-			"Name": "Hank",
-			"Text": "Are you okay, friend??? Do you want some milk????"
-		},
-		{
-			"Name": "Elm",
-			"Text": "No no, I'm fine."
-		},
-		{
-			"Name": "Elm",
-			"Text": "(His loud voice is actually kind of grounding.)"
-		},
-		{
-			"Name": "Elm",
-			"Text": "Hank, have you checked near the village entrance?"
-		},
-		{
-			"Name": "Hank",
-			"Text": "The village entrance??? No????"
-		},
-		{
-			"Name": "Kai",
-			"Text": "Another one of your cryptic intuitions?"
-		},
-		{
-			"Name": "Elm",
-			"Text": "Something like that."
-		},
-		{
-			"Name": "Kai",
-			"Text": "Lead the way, then!"
-		}
-	],
-	"return feed": [
+	"item returned": [
 		{
 			"Name": "Hank",
 			"Text": "Ozzy's lunch!!!!"
@@ -135,6 +97,14 @@
 		{
 			"Name": "Hank",
 			"Text": "Anna must have accidentally taken it when she picked up some of my exports!!!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "!"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Anna?)"
 		},
 		{
 			"Name": "Elm",

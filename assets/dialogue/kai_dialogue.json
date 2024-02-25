@@ -95,36 +95,6 @@
 			"Text": "I just wish I knew were I dropped it. Maybe if I think hard enough..."
 		}
 	],
-	"end tutorial fb": [
-		{
-			"Name": "Elm",
-			"Text": "(What was that?)"
-		},
-		{
-			"Name": "Kai",
-			"Text": "Are you alright? You look a bit pale."
-		},
-		{
-			"Name": "Elm",
-			"Text": "I'm fine. Just a bit dizzy."
-		},
-		{
-			"Name": "Elm",
-			"Text": "About your knife -- did you ever check outside your house, by any chance? On the left."
-		},
-		{
-			"Name": "Kai",
-			"Text": "Huh? Why so specific?"
-		},
-		{
-			"Name": "Kai",
-			"Text": "I guess I haven't checked there yet, though. It's worth a shot."
-		},
-		{
-			"Name": "Kai",
-			"Text": "Come on! Maybe some fresh air will help you feel a bit better."
-		}
-	],
 	"idle1": [
 		{
 			"Name": "Kai",
@@ -141,6 +111,40 @@
 		{
 			"Name": "Kai",
 			"Text": "Anna's house is just to the left of mine! We should be able to find her there."
+		}
+	],
+	"anna felix gone": [
+		{
+			"Name": "Elm",
+			"Text": "Kai."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Do you know anyone named 'Phoenix'?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Phoenix is the village doctor! How do you know him? Is Phoenix that famous??"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Oh -- no, I just thought that... uh..."
+		},
+		{
+			"Name": "Elm",
+			"Text": "... that I heard his name when we were walking outside?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Really?? Damn, you must have good ears. I didn't hear anything like that."
+		},
+		{
+			"Name": "Kai",
+			"Text": "But yeah! His place is a little south of Hank's barn. Let's go meet him!"
 		}
 	]
 }

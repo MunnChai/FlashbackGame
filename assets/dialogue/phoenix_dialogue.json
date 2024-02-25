@@ -1,0 +1,62 @@
+{
+	"item desired": [
+		{
+			"Name": "???",
+			"Text": "Where did I put it..."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Good afternoon, Doc!"
+		},
+		{
+			"Name": "Dr. Phoenix",
+			"Text": "Good afternoon, Kai."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Dr. Phoenix. How are you connected to these flashbacks?)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Were you looking for something just now, Doc?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Wait -- don't tell me. You've also lost something?"
+		},
+		{
+			"Name": "Dr. Phoenix",
+			"Text": "As a matter of fact, I have. I can't seem to find some of my medicine."
+		},
+		{
+			"Name": "Dr. Phoenix",
+			"Text": "It's all rather distressing. I'm already on a shortage of medicines. I can't afford to misplace them like this."
+		},
+		{
+			"Name": "Elm",
+			"Text": "I can help."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Maybe then I can ask him about those flashbacks.)"
+		}
+	],
+	"item returned": [
+		{
+			"Name": "Elm",
+			"Text": "Here's your medicine."
+		},
+		{
+			"Name": "Dr. Phoenix",
+			"Text": "You really found it! You startled me, running off like that all of a sudden. Where was it, if I may ask?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "You - I suspect you just dropped it while you were walking. It was near some bushes outside."
+		},
+		{
+			"Name": "Dr. Phoenix",
+			"Text": "I see."
+		}
+	]
+}

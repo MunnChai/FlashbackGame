@@ -1,0 +1,122 @@
+{
+	"end fb1": [
+		{
+			"Name": "Elm",
+			"Text": "(Ugh. What was that?)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Are you alright? You look a bit pale."
+		},
+		{
+			"Name": "Elm",
+			"Text": "I'm fine. Just a bit dizzy."
+		},
+		{
+			"Name": "Elm",
+			"Text": "About your knife -- did you ever check outside your house, by any chance? On the left."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Huh? Why so specific?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "I guess I haven't checked there yet, though. It's worth a shot."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Come on! Maybe some fresh air will help you feel a bit better."
+		}
+	],
+	"end fb2": [
+		{
+			"Name": "Elm",
+			"Text": "(Ugh. Those trips aren't good for my stomach.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Who were those weird people in that flashback? Kai and some woman.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(And then there were those other two. I couldn't see them, and I couldn't hear their voices all too well... only what they were saying.)"
+		},
+		{
+			"Name": "Hank",
+			"Text": "Are you okay, friend??? Do you want some milk????"
+		},
+		{
+			"Name": "Elm",
+			"Text": "No no, I'm fine."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(His loud voice is actually kind of grounding.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Hank, have you checked near the village entrance?"
+		},
+		{
+			"Name": "Hank",
+			"Text": "The village entrance??? No????"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Another one of your cryptic intuitions?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "Something like that."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Lead the way, then!"
+		}
+	],
+	"end fb3": [
+		{
+			"Name": "Elm",
+			"Text": "(Oof. I feel better than last time, but I still feel like I just got sucker-punched in the gut.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(That aside -- who is Phoenix? That's the only name I've gotten from these cryptic flashbacks.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(And did Felix really...?)"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Ah! The Elm-patented Face Of Fatigue. What's your guess?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "I... Let me go check."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Again with your cryptic messages!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "I'll come with. I want to see if you're right."
+		}
+	],
+	"end fb4": [
+		{
+			"Name": "Elm",
+			"Text": "(Blargh.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(But that confirms it. One of the men in the flashbacks is Mr. Diaz!)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(If I keep this up, maybe I can figure out what really happened to him.)"
+		}
+	]
+}

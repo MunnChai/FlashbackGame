@@ -1,11 +1,53 @@
 {
-	"meet anna": [
+	"fb2": [
+		{
+			"Name": "Kai",
+			"Text": "Miss Anna! Mr. Diaz just told me you're leaving the village for three months!! It's not true, right?"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Mr. Diaz told you?"
+		},
+		{
+			"Name": "Kai",
+			"Text": "Well... more like I overheard him talking to Phoenix about it. But still!"
+		},
+		{
+			"Name": "Kai",
+			"Text": "He's lying, right? You never leave for more than two weeks at a time, so three months is just absurd!"
+		},
+		{
+			"Name": "Anna",
+			"Text": "... I'm sorry, Kai. It's true."
+		},
+		{
+			"Name": "Kai",
+			"Text": "But why??"
+		},
+		{
+			"Name": "Anna",
+			"Text": "This export is going to a town that's a little further away, that's all. I'll be back soon."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Oh..."
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Hm... it doesn't sound like their conversation finished, but I can't hear anything else.)"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(Maybe these flashbacks have some sort of limit to them.)"
+		}
+	],
+	"item desired": [
 		{
 			"Name": "???",
 			"Text": "... so really, ma belle, I think it imperative that you reconsider your choice."
 		},
 		{
-			"Name": "???",
+			"Name": "Anna",
 			"Text": "Please, Felix. I've told you many times already. My decision is final."
 		},
 		{
@@ -19,6 +61,10 @@
 		{
 			"Name": "Anna",
 			"Text": "Oh! Good afternoon, Kai. And who might you be?"
+		},
+		{
+			"Name": "Elm",
+			"Text": "(So it is her.)"
 		},
 		{
 			"Name": "Elm",
@@ -137,30 +183,90 @@
 			"Text": "Of course."
 		}
 	],
-	"end permit fb": [
+	"item returned": [
 		{
-			"Name": "Elm",
-			"Text": "(Oof. I feel better than last time, but I still feel like I got sucker-punched in the gut.)"
+			"Name": "Anna",
+			"Text": "My permit!"
+		},
+		{
+			"Name": "Felix",
+			"Text": "!"
+		},
+		{
+			"Name": "Anna",
+			"Text": "Where did you find it? I've been looking all over for it."
 		},
 		{
 			"Name": "Elm",
-			"Text": "(That aside -- did Felix really steal the permit?)"
+			"Text": "We found it in -"
 		},
 		{
 			"Name": "Kai",
-			"Text": "Ah! The Elm-patented Face Of Fatigue. What's your guess?"
+			"Text": "We found it outside! I guess you must've dropped it while you were walking."
+		},
+		{
+			"Name": "Anna",
+			"Text": "Really? I swear I made at least seven rounds outside. Maybe my vision's just going these days."
 		},
 		{
 			"Name": "Elm",
-			"Text": "I... Let me go check."
+			"Text": "(Kai's covering for him. I guess he wants to keep the peace as much as possible.)"
+		},
+		{
+			"Name": "Felix",
+			"Text": "..."
 		},
 		{
 			"Name": "Kai",
-			"Text": "Again with your cryptic messages!"
+			"Text": "Elm here's just really good at finding things, Anna. I certainly didn't spot it on my way over."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Yeah. No sweat."
+		},
+		{
+			"Name": "Anna",
+			"Text": "I see. Well, thank you Elm."
+		},
+		{
+			"Name": "Anna",
+			"Text": "I'm sorry I can't stay for longer, but I really must be on my way."
 		},
 		{
 			"Name": "Kai",
-			"Text": "I'll come with. I want to see if you're right."
+			"Text": "Of course! Go ahead, Anna. We'll hold the fort down while you're gone."
+		},
+		{
+			"Name": "Anna",
+			"Text": "Haha, always so spritely. I trust you to handle the villagers while I'm gone, Kai."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Yes ma'am! Wait -- you won't be gone for as long as last time, will you?"
+		},
+		{
+			"Name": "Anna",
+			"Text": "That was a special case. I'll be back soon."
+		},
+		{
+			"Name": "Kai",
+			"Text": "Okay!! I'll see you when you get back."
+		},
+		{
+			"Name": "Elm",
+			"Text": "Have a safe trip, Miss Anna."
+		},
+		{
+			"Name": "Anna",
+			"Text": "I will. Thank you again, Elm. You've quite saved me."
+		},
+		{
+			"Name": "Felix",
+			"Text": "..."
+		},
+		{
+			"Name": "Felix",
+			"Text": "Yes, well, I do believe I should be on my way as well. Good day, you two."
 		}
 	]
 }
